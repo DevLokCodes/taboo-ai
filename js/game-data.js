@@ -1,4 +1,4 @@
-// Game data with improved word associations and better AI logic
+// Game data with simplified AI responses
 const gameData = {
 words: [
     {
@@ -84,40 +84,41 @@ words: [
 ],
 aiResponses: {
     greeting: [
-    "I'm ready to guess! Give me your best hint.",
-    "Let's play! I'll try to guess the word from your hints.",
-    "New round! Give me a hint without using the taboo words.",
-    "I'm eager to play! What hint can you give me?"
+    "Ready.",
+    "Give me a hint.",
+    "Go ahead.",
+    "Your turn."
     ],
     thinking: [
-    "Hmm, analyzing your hint...",
-    "Thinking about what you could mean...",
-    "Processing your clue...",
-    "Let me consider what you're suggesting..."
+    "...",
+    "Thinking...",
+    "Processing...",
+    "..."
     ],
-    incorrect: [
-    "Is it {guess}?",
-    "Could it be {guess}?",
-    "Based on your hint, I'm thinking {guess}.",
-    "I'm guessing {guess}. Am I close?",
-    "My best guess is {guess}."
+    incorrectSimple: [
+    "{guess}",
+    "{guess}",
+    "{guess}",
+    "{guess}",
+    "{guess}"
     ],
     giveUp: [
-    "I need more specific clues to guess this one.",
-    "That's a tricky hint! Can you try a different approach?",
-    "I'm not connecting the dots yet. Another hint?",
-    "I'm stumped by that hint. Can you give me another clue?"
+    "I give up.",
+    "Can't figure it out.",
+    "Need a different hint.",
+    "No idea."
     ],
-    guessed: [
-    "Got it! It's {word}!",
-    "Aha! The word is {word}!",
-    "I've figured it out - {word}!",
-    "Yes, it must be {word}!"
+    guessedSimple: [
+    "{word}",
+    "{word}",
+    "{word}",
+    "{word}"
     ],
     tabooUsed: [
-    "Oops! You used '{taboo}' which is a taboo word!",
-    "Watch out! '{taboo}' is one of the taboo words.",
-    "I caught you using '{taboo}' - that's on the taboo list!"
+    "'{taboo}' is taboo.",
+    "Can't use '{taboo}'.",
+    "'{taboo}' is forbidden.",
+    "No '{taboo}' allowed."
     ]
 },
 // Enhanced word associations for better AI guessing
