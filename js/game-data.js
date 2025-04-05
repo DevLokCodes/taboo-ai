@@ -122,7 +122,7 @@ aiResponses: {
 },
 // Enhanced word associations for better AI guessing
 wordAssociations: {
-    "COFFEE": ["java", "espresso", "roast", "arabica", "cafe", "mug", "grind", "filter", "barista", "latte", "mocha", "cappuccino", "aroma", "bitter", "starbucks", "plantation", "black", "stimulant", "grounds", "percolator"],
+    "COFFEE": ["drink", "bean", "cup", "caffeine", "morning", "brew", "hot", "espresso", "barista", "starbucks", "arabica", "robusta", "roast", "grind", "percolator", "filter", "latte", "java", "cafe", "coffeehouse", "aroma", "mug"],
     "PIANO": ["grand", "melody", "concert", "sonata", "ivory", "bench", "pedal", "chord", "composer", "steinway", "recital", "symphony", "orchestra", "beethoven", "mozart", "jazz", "tune", "concert", "musician", "keys"],
     "BOOK": ["chapter", "literature", "fiction", "binding", "publication", "paperback", "text", "shelf", "print", "spine", "hardcover", "bookmark", "bestseller", "encyclopedia", "dictionary", "bibliography", "illustration", "prologue", "epilogue", "volume"],
     "OCEAN": ["deep", "marine", "salt", "tide", "shore", "pacific", "atlantic", "coral", "dive", "blue", "shark", "whale", "sailor", "vessel", "navigation", "underwater", "coast", "island", "horizon", "current"],

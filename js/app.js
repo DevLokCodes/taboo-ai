@@ -53,7 +53,17 @@ function makeCardSticky() {
   // Add sticky class to the card container
   cardElement.classList.add('sticky-card');
   
-  // Adjust the conversation container to not be hidden
+  // Use ResizeObserver to dynamically adjust spacing when card height changes
+  const resizeObserver = new ResizeObserver(entries => {
+    const cardHeight = cardElement.offsetHeight;
+    // Add some extra padding (20px) to ensure no overlap
+    conversationElement.style.marginTop = `${cardHeight + 20}px`;
+  });
+  
+  // Start observing the card element
+  resizeObserver.observe(cardElement);
+  
+  // Initial adjustment
   const cardHeight = cardElement.offsetHeight;
   conversationElement.style.marginTop = `${cardHeight + 20}px`;
 }
