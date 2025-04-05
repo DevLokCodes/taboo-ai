@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Taboo Game</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="game-container">
+    
+    <div class="game-info">
+      <div class="round-info">Round: <span id="round-count">1</span></div>
+      <div class="score">Score: <span id="score">0</span></div>
+    </div>
+    
+    <div class="card" id="card">
+      <div class="word-label">Target Word</div>
+      <div class="target-word" id="target-word">COFFEE</div>
+      <div class="word-label">Taboo Words</div>
+      <div class="taboo-words" id="taboo-words">
+        <div class="taboo-word">Drink</div>
+        <div class="taboo-word">Cup</div>
+        <div class="taboo-word">Bean</div>
+        <div class="taboo-word">Caffeine</div>
+        <div class="taboo-word">Morning</div>
+        <div class="taboo-word">Brew</div>
+        <div class="taboo-word">Hot</div>
+      </div>
+    </div>
+    
+    <div class="feedback" id="feedback"></div>
+    
+    <div class="conversation-container" id="conversation">
+      <!-- Conversation messages will be added here -->
+    </div>
+    
+    <div class="input-area">
+      <input type="text" id="hint-input" placeholder="Enter your hint here..." autocomplete="off">
+      <button id="submit-hint">Submit</button>
+    </div>
+    
+    <div class="controls">
+      <button id="new-word" class="game-button">New Word</button>
+      <button id="skip-word" class="game-button skip-button">Skip Word</button>
+    </div>
+  </div>
+
+  <script src="js/game-data.js"></script>
+  <script src="js/ai-logic.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
