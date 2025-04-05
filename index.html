@@ -8,24 +8,31 @@
 </head>
 <body>
   <div class="game-container">
-    
-    <div class="game-info">
-      <div class="round-info">Round: <span id="round-count">1</span></div>
-      <div class="score">Score: <span id="score">0</span></div>
-    </div>
-    
-    <div class="card" id="card">
-      <div class="word-label">Target Word</div>
-      <div class="target-word" id="target-word">COFFEE</div>
-      <div class="word-label">Taboo Words</div>
-      <div class="taboo-words" id="taboo-words">
-        <div class="taboo-word">Drink</div>
-        <div class="taboo-word">Cup</div>
-        <div class="taboo-word">Bean</div>
-        <div class="taboo-word">Caffeine</div>
-        <div class="taboo-word">Morning</div>
-        <div class="taboo-word">Brew</div>
-        <div class="taboo-word">Hot</div>
+    <div class="fixed-header">
+      <div class="game-info">
+        <div class="round-info">Round: <span id="round-count">1</span></div>
+        <div class="timer-display">
+          Time: <span id="timer-count">60</span>s
+        </div>
+        <div class="score">Score: <span id="score">0</span></div>
+      </div>
+      <div class="timer-progress">
+        <div class="timer-bar" id="timer-bar"></div>
+      </div>
+      
+      <div class="card" id="card">
+        <div class="word-label">Target Word</div>
+        <div class="target-word" id="target-word">COFFEE</div>
+        <div class="word-label">Taboo Words</div>
+        <div class="taboo-words" id="taboo-words">
+          <div class="taboo-word forbidden">Drink</div>
+          <div class="taboo-word forbidden">Cup</div>
+          <div class="taboo-word forbidden">Bean</div>
+          <div class="taboo-word forbidden">Caffeine</div>
+          <div class="taboo-word forbidden">Morning</div>
+          <div class="taboo-word forbidden">Brew</div>
+          <div class="taboo-word forbidden">Hot</div>
+        </div>
       </div>
     </div>
     
@@ -36,6 +43,7 @@
     </div>
     
     <div class="input-area">
+      <div class="taboo-warning" id="taboo-warning">Taboo word detected!</div>
       <input type="text" id="hint-input" placeholder="Enter your hint here..." autocomplete="off">
       <button id="submit-hint">Submit</button>
     </div>
